@@ -1,0 +1,104 @@
+{
+  "seed": 42,
+  "beta": 0.1,
+  "steps": 30,
+  "training_pairs": 48,
+  "before": {
+    "loss": 0.6931471824645996,
+    "reward_margin": 0.0,
+    "positive_margins": 0,
+    "pairs": 32
+  },
+  "after": {
+    "loss": 0.6611748337745667,
+    "reward_margin": 0.06775188446044922,
+    "positive_margins": 26,
+    "pairs": 32
+  },
+  "generation": {
+    "exact_matches": 8,
+    "total": 16,
+    "examples": [
+      {
+        "question": "请分类：太阳。",
+        "expected": "恒星",
+        "generated": "恒星"
+      },
+      {
+        "question": "请分类：月球。",
+        "expected": "卫星",
+        "generated": "卫星"
+      },
+      {
+        "question": "请分类：地球。",
+        "expected": "行星",
+        "generated": "行星行星"
+      },
+      {
+        "question": "请分类：火星。",
+        "expected": "行星",
+        "generated": "行星行星"
+      },
+      {
+        "question": "请分类：木星。",
+        "expected": "行星",
+        "generated": "行星"
+      },
+      {
+        "question": "请分类：金星。",
+        "expected": "行星",
+        "generated": "行星"
+      },
+      {
+        "question": "请分类：天狼星。",
+        "expected": "恒星",
+        "generated": "恒星"
+      },
+      {
+        "question": "请分类：北极星。",
+        "expected": "恒星",
+        "generated": "恒星"
+      },
+      {
+        "question": "太阳的类别是什么？",
+        "expected": "恒星",
+        "generated": ""
+      },
+      {
+        "question": "月球的类别是什么？",
+        "expected": "卫星",
+        "generated": ""
+      },
+      {
+        "question": "地球的类别是什么？",
+        "expected": "行星",
+        "generated": ""
+      },
+      {
+        "question": "火星的类别是什么？",
+        "expected": "行星",
+        "generated": ""
+      },
+      {
+        "question": "木星的类别是什么？",
+        "expected": "行星",
+        "generated": "行星行星"
+      },
+      {
+        "question": "金星的类别是什么？",
+        "expected": "行星",
+        "generated": "行星行星"
+      },
+      {
+        "question": "天狼星的类别是什么？",
+        "expected": "恒星",
+        "generated": "恒星"
+      },
+      {
+        "question": "北极星的类别是什么？",
+        "expected": "恒星",
+        "generated": "恒星"
+      }
+    ]
+  }
+}

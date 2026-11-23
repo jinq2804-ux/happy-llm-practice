@@ -1,0 +1,302 @@
+{
+  "device": "cpu",
+  "seed": 42,
+  "pretrain": {
+    "eval_before": 5.976591110229492,
+    "eval_after": 8.798759460449219,
+    "steps": 100,
+    "train_loss": 1.5923612785339356,
+    "learning_rate": 0.003,
+    "train_examples": 24,
+    "eval_examples": 16,
+    "parameters": 98624,
+    "trainable_parameters": 98624,
+    "trainable_percent": 100.0,
+    "generation": {
+      "prompt": "天文学里，",
+      "continuation": "月球属于卫星。"
+    }
+  },
+  "base_instruction_generation": {
+    "exact_matches": 0,
+    "total": 16,
+    "examples": [
+      {
+        "question": "请分类：太阳。",
+        "expected": "恒星",
+        "generated": "天文学里，，，，木星是行星。"
+      },
+      {
+        "question": "请分类：月球。",
+        "expected": "卫星",
+        "generated": "天文学里，，，，木星是行星。"
+      },
+      {
+        "question": "请分类：地球。",
+        "expected": "行星",
+        "generated": "天文学里，，，，木星是行星。"
+      },
+      {
+        "question": "请分类：火星。",
+        "expected": "行星",
+        "generated": "天文学里，，，，木星是行星。"
+      },
+      {
+        "question": "请分类：木星。",
+        "expected": "行星",
+        "generated": "天文学里天文学里，，，木星是行星。"
+      },
+      {
+        "question": "请分类：金星。",
+        "expected": "行星",
+        "generated": "天文学里天文学里，，，木星是行星。"
+      },
+      {
+        "question": "请分类：天狼星。",
+        "expected": "恒星",
+        "generated": "天文学里，，，例如金星是行星。"
+      },
+      {
+        "question": "请分类：北极星。",
+        "expected": "恒星",
+        "generated": "天文学里，，，例如金星是行星。"
+      },
+      {
+        "question": "太阳的类别是什么？",
+        "expected": "恒星",
+        "generated": "天文学里，，金星是行星。"
+      },
+      {
+        "question": "月球的类别是什么？",
+        "expected": "卫星",
+        "generated": "天文学里，，，金星是行星。"
+      },
+      {
+        "question": "地球的类别是什么？",
+        "expected": "行星",
+        "generated": "天文学里，，，金星是行星。"
+      },
+      {
+        "question": "火星的类别是什么？",
+        "expected": "行星",
+        "generated": "天文学里天文学里，，，金星是行星。"
+      },
+      {
+        "question": "木星的类别是什么？",
+        "expected": "行星",
+        "generated": "天文学里，，，木星是行星。"
+      },
+      {
+        "question": "金星的类别是什么？",
+        "expected": "行星",
+        "generated": "天文学里，，，木星是行星。"
+      },
+      {
+        "question": "天狼星的类别是什么？",
+        "expected": "恒星",
+        "generated": "天文学里，，金星是行星。"
+      },
+      {
+        "question": "北极星的类别是什么？",
+        "expected": "恒星",
+        "generated": "天文学里，，木星是行星。"
+      }
+    ]
+  },
+  "full_sft": {
+    "eval_before": 8.129318237304688,
+    "eval_after": 2.504338026046753,
+    "steps": 100,
+    "train_loss": 0.5519033674150705,
+    "learning_rate": 0.002,
+    "train_examples": 24,
+    "eval_examples": 16,
+    "parameters": 98624,
+    "trainable_parameters": 98624,
+    "trainable_percent": 100.0,
+    "generation": {
+      "exact_matches": 9,
+      "total": 16,
+      "examples": [
+        {
+          "question": "请分类：太阳。",
+          "expected": "恒星",
+          "generated": "恒星"
+        },
+        {
+          "question": "请分类：月球。",
+          "expected": "卫星",
+          "generated": "卫星"
+        },
+        {
+          "question": "请分类：地球。",
+          "expected": "行星",
+          "generated": "行星行星"
+        },
+        {
+          "question": "请分类：火星。",
+          "expected": "行星",
+          "generated": "行星行星"
+        },
+        {
+          "question": "请分类：木星。",
+          "expected": "行星",
+          "generated": "行星"
+        },
+        {
+          "question": "请分类：金星。",
+          "expected": "行星",
+          "generated": "行星"
+        },
+        {
+          "question": "请分类：天狼星。",
+          "expected": "恒星",
+          "generated": "恒星"
+        },
+        {
+          "question": "请分类：北极星。",
+          "expected": "恒星",
+          "generated": "恒星"
+        },
+        {
+          "question": "太阳的类别是什么？",
+          "expected": "恒星",
+          "generated": ""
+        },
+        {
+          "question": "月球的类别是什么？",
+          "expected": "卫星",
+          "generated": "卫星"
+        },
+        {
+          "question": "地球的类别是什么？",
+          "expected": "行星",
+          "generated": ""
+        },
+        {
+          "question": "火星的类别是什么？",
+          "expected": "行星",
+          "generated": ""
+        },
+        {
+          "question": "木星的类别是什么？",
+          "expected": "行星",
+          "generated": "行星行星"
+        },
+        {
+          "question": "金星的类别是什么？",
+          "expected": "行星",
+          "generated": "行星行星"
+        },
+        {
+          "question": "天狼星的类别是什么？",
+          "expected": "恒星",
+          "generated": "恒星"
+        },
+        {
+          "question": "北极星的类别是什么？",
+          "expected": "恒星",
+          "generated": "恒星"
+        }
+      ]
+    }
+  },
+  "lora": {
+    "eval_before": 8.129318237304688,
+    "eval_after": 4.985272407531738,
+    "steps": 100,
+    "train_loss": 2.5693521881103516,
+    "learning_rate": 0.002,
+    "train_examples": 24,
+    "eval_examples": 16,
+    "parameters": 115008,
+    "trainable_parameters": 16384,
+    "trainable_percent": 14.245965498052309,
+    "generation": {
+      "exact_matches": 5,
+      "total": 16,
+      "examples": [
+        {
+          "question": "请分类：太阳。",
+          "expected": "恒星",
+          "generated": "恒星恒星"
+        },
+        {
+          "question": "请分类：月球。",
+          "expected": "卫星",
+          "generated": "卫星"
+        },
+        {
+          "question": "请分类：地球。",
+          "expected": "行星",
+          "generated": "行星行星"
+        },
+        {
+          "question": "请分类：火星。",
+          "expected": "行星",
+          "generated": "行星行星"
+        },
+        {
+          "question": "请分类：木星。",
+          "expected": "行星",
+          "generated": "行星"
+        },
+        {
+          "question": "请分类：金星。",
+          "expected": "行星",
+          "generated": "行星"
+        },
+        {
+          "question": "请分类：天狼星。",
+          "expected": "恒星",
+          "generated": "恒星"
+        },
+        {
+          "question": "请分类：北极星。",
+          "expected": "恒星",
+          "generated": "恒星"
+        },
+        {
+          "question": "太阳的类别是什么？",
+          "expected": "恒星",
+          "generated": ""
+        },
+        {
+          "question": "月球的类别是什么？",
+          "expected": "卫星",
+          "generated": ""
+        },
+        {
+          "question": "地球的类别是什么？",
+          "expected": "行星",
+          "generated": ""
+        },
+        {
+          "question": "火星的类别是什么？",
+          "expected": "行星",
+          "generated": ""
+        },
+        {
+          "question": "木星的类别是什么？",
+          "expected": "行星",
+          "generated": "卫星"
+        },
+        {
+          "question": "金星的类别是什么？",
+          "expected": "行星",
+          "generated": "卫星"
+        },
+        {
+          "question": "天狼星的类别是什么？",
+          "expected": "恒星",
+          "generated": "恒星恒星"
+        },
+        {
+          "question": "北极星的类别是什么？",
+          "expected": "恒星",
+          "generated": ""
+        }
+      ]
+    }
+  }
+}
